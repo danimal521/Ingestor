@@ -2,10 +2,10 @@ import os
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
 
-env_KV = os.environ["env_cosmos_endpoint"]
-env_tenant_id = os.environ["env_cosmos_key"]
-env_client_id = os.environ["env_openai_key"]
-env_client_secret = os.environ["env_api_base"]
+env_KV = os.environ["env_KV"]
+env_tenant_id = os.environ["env_tenant_id"]
+env_client_id = os.environ["env_client_id"]
+env_client_secret = os.environ["env_client_secret"]
 
 m_strKVUri = f"https://{env_KV}.vault.azure.net"
 
